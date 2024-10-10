@@ -44,7 +44,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 24px; */
+    gap: 24px;
     li {
       display: inline-block;
       position: relative;
@@ -190,6 +190,11 @@ main {
   margin-bottom: 48px;
   border-radius: 40px;
 }
+.likes-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 .knolege {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -203,6 +208,12 @@ main {
   img {
     margin-bottom: 12px;
   }
+}
+
+.know-item img:hover {
+  filter: drop-shadow(15px 5px 10px var(--red));
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
 }
 
 .motivation {
@@ -233,7 +244,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   background: var(--red);
-  margin: 24px 0;
+  margin: 240px 0;
   padding: 12px;
   span {
     font-weight: bold;
@@ -289,17 +300,10 @@ footer {
     transform: translateX(100%);
   }
 }
-.likes-item.scroll-out {
-  animation: slideOut 0.5s;
-}
+
 .about-text.animate,
 .motivation-image.animate {
   animation: slideIn 1s ease-out;
-}
-
-.likes-item:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
 }
 
 .intro-name,
@@ -310,7 +314,7 @@ footer {
 }
 .intro-image,
 .motivation-image,
-.about-img {
+.about-image {
   animation: fadeOut 1.5s ease-out;
   animation-fill-mode: both;
 }
