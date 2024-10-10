@@ -1,5 +1,5 @@
 :root {
-  --red: #e53939;
+  --red: rgb(229, 57, 57);
 }
 html {
   scroll-behavior: smooth;
@@ -13,9 +13,9 @@ html {
 body {
   background: radial-gradient(
       circle at top right,
-      rgba(255, 0, 0, 0.7),
+      rgba(229, 57, 57, 0.7),
       rgba(0, 0, 0, 0) 20%
-    )
+    ),
     black; /* Cor de fundo geral */
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background: black;
+
   ul {
     list-style: none;
     display: flex;
@@ -78,7 +78,7 @@ a {
 .main-menu {
   display: flex;
   justify-content: center;
-  /* gap: 20px; */
+
   list-style: none;
 }
 
@@ -89,7 +89,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 128px;
-  /* gap: 24px; */
 }
 .intro-name {
   width: 100%;
@@ -220,13 +219,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 374px;
 }
 .motivation-image {
   background: radial-gradient(
     circle at center,
-    rgba(255, 0, 0, 0.7),
+    rgba(229, 57, 57, 0.7),
     rgba(0, 0, 0, 0) 80%
   );
   img {
