@@ -13,31 +13,32 @@
     />
   </head>
   <body>
-    <header class="">
+    <header id="home">
      <div >
-      <div onclick="toggleMenu()">X</div>
-      <nav class="">
-        <ul class="main_menu">
-          <li ><a href=""></a>Home</li>
-          <li ><a href=""></a>Sobre</li>
-          <li ><a href=""></a>Gostos Pessoais</li>
-          <li ><a href=""></a>Motivações</li>
+      <div class="menu-hamburger"><img src="/src/assets/icons/menu.svg" alt=""></div>
+      <nav class="container-header">
+        <ul>
+          <li ><a class="link-menu" href="#">Home</a></li>
+          <li ><a class="link-menu" href="#about-section">Sobre</a></li>
+          <li ><a class="link-menu" href="#likes-id">Gostos Pessoais</a></li>
+          <li ><a class="link-menu" href="#motivation-id">Motivações</a></li>
         </ul>
       </nav>
      
      </div>
     </header>
     <main class="">
-      <div class="intro_name">
+      <div class="intro-name">
         <span>Conheça</span>
-        <h1 class="">Dimitry Machado Marinho</h1>
+        <h1 >Dimitry Machado Marinho</h1>
         <p>31 anos</br> Desenvolvedor Front-End</p>
       </div>
-      <div class="intro_image">
+      <div class="intro-image">
         <img src="assets/images/dimy.png" alt="foto retrato">
       </div>
     </main>
-    <section class="about">
+    <section class="about" id="about-section">
+     
       <div class="about-text">
         <div class="about-head">
           <img src="/src/assets/icons/laptop.svg" alt="laptop">
@@ -55,28 +56,72 @@
           usabilidade.
         </p>
       </div>
-      <div class="about-img"><img src="/src/assets/images/keybord.png" alt=""></div>
+      <div class="about-image"><img src="/src/assets/images/keybord.png" alt=""></div>
     </section>
-    <section class="likes_section">
+    <section class="likes-section" id="likes-id">
+      <div class="section-text-header">
+        <strong>Gostos Pessoais</strong>
+      </div>
+
       <div class="likes">
-        <div class="likes_item">
+        <div class="likes-item">
+          <img src="./assets/images/controler.svg" alt="controle">
           <p>Jogar Video-Games é uma ocupação que me diverte a muitos anos</p>
         </div>
-        <div class="likes_item">
+        <div class="likes-item">
+          <img src="./assets/images/family.svg" alt="familia">
           <p>Passar tempo de qualidade com minha esposa não tem preço!</p>
         </div>
-        <div class="likes_item">
+        <div class="likes-item">
+          <img src="./assets/images/drawing.svg" alt="desenhar">
           <p>
             Desenhar é algo que fiz durante toda minha vida e gosto bastante!
           </p>
         </div>
       </div>
-      <div class="knolege"></div>
+      <div class="section-text-header">
+        <strong>Conhecimentos</strong>
+      </div>
+      <div class="knolege" id="knolege-id">
+        
+        <div class="know-item">
+          <img src="./assets/icons/html.svg" alt="html">
+          <span>HTML 5</span>
+        </div>
+        <div class="know-item">
+          <img src="./assets/icons/css.svg" alt="html">
+          <span>CSS 3</span>
+        </div>
+        <div class="know-item">
+          <img src="./assets/icons/javascript.svg" alt="html">
+          <span>JavaScript</span>
+        </div>
+        <div class="know-item">
+          <img src="./assets/icons/react.svg" alt="html">
+          <span>ReactJS</span>
+        </div>
+        <div class="know-item">
+          <img src="./assets/icons/git.svg" alt="html">
+          <span>GIT</span>
+        </div>
+        <div class="know-item">
+          <img src="./assets/icons/postgres.svg" alt="html">
+          <span>PostgreSQL</span>
+        </div>
+        <div class="know-item">
+          <img src="./assets/icons/node.svg" alt="html">
+          <span>NodeJS</span>
+        </div>
+      </div>
     </section>
-    <section class="motivation">
-      <div class="motivation_image"></div>
-      <div class="motivation_text">
-        <p><strong>Motivações </strong>Front End</p>
+    <section class="motivation" id="motivation-id">
+      <div class="motivation-image"><img src="./assets/images/mot.svg" alt=""></div>
+      <div class="motivation-text">
+        <div class="section-text-header">
+          <img src="/src/assets/icons/sun.svg" alt="laptop">
+         <strong>Motivações </strong>
+        </div>
+       
         <p>
           Gosto bastante da parte de front-end, de design. Eu estou querendo
           entrar no mercado de trabalho agora. Poder agregar minha experiencia
@@ -86,7 +131,29 @@
         </p>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+      <div>
+        <span>Desenvolvido por: Dimitry Machado Marinho</span>
+      </div>
+      <a class="link-menu" href="#home">Voltar para o topo</a>
+      <div class="footer-links">
+        <ul>
+          <li>
+            <a href="www.linkedin.com/in/dimitrymm">
+              <img src="/src/assets/icons/linkedin.svg" alt="linkedin icon" srcset=""> 
+            </a>
+            LinkedIn
+          </li>
+          <li>
+            <a href="https://github.com/dimitrymm">
+              <img src="/src/assets/icons/github.svg" alt="github icon" srcset=""> 
+            </a>
+            Github
+          </li>
+        </ul>
+      </div>
+    </footer>
+    
     <script src="/src/scripts/script.js"></script>
   </body>
 </html>
