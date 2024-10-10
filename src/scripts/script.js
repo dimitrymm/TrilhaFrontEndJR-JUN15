@@ -22,11 +22,3 @@ document.querySelectorAll(".link-menu").forEach((link) => {
   });
   document.removeEventListener();
 });
-// document
-//   .getElementById("link-menu")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault();
-//     document
-//       .getElementById("about-section")
-//       .scrollIntoView({ behavior: "smooth" });
-//   });
