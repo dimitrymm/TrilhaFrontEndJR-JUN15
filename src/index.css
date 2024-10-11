@@ -84,7 +84,7 @@ a {
 
 main {
   width: 100%;
-  margin: 96px 0;
+  margin: 96px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,8 +115,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 96px;
-  gap: 24px; */
 }
 .about-head {
   display: flex;
@@ -169,7 +167,7 @@ main {
 .likes-section {
   display: flex;
   flex-direction: column;
-  margin: 96px 259px;
+  margin: 96px 18vh;
 }
 .likes {
   display: flex;
@@ -318,32 +316,52 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  strong {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
   main {
     flex-direction: column;
-    margin: 12px;
+    margin: 12px 0;
+    gap: 0;
   }
+
+  .intro-name {
+    margin: 48px 12px;
+  }
+
   .intro-image {
+    margin: 12px 0;
     justify-content: center;
     align-items: center;
     width: 80%;
   }
   .about {
     flex-direction: column;
-    margin: 12px;
+    margin: 12px 24px;
   }
   .about-head {
     justify-content: center;
     align-items: center;
   }
-  .likes-section,
+  .likes-section {
+    margin: 0px;
+  }
   .about-head {
     margin-top: 86px;
+  }
+  .section-text-header {
+    align-items: center;
+    justify-content: center;
   }
   .likes {
     flex-direction: column;
     margin: 12px;
     gap: 12px;
   }
+
   .knolege {
     margin: 12px 24px;
     img {
@@ -353,10 +371,46 @@ footer {
   }
   .motivation {
     flex-direction: column;
-    margin: 12px;
+    margin: 48px 12px;
+    gap: 12px;
+  }
+  footer {
+    margin: 24px 0;
+    img {
+      width: 24px;
+    }
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  main {
+    margin: 96px 24px;
+    gap: 12px;
+  }
+
+  .about {
+    margin: 0 24px;
+  }
+  .likes-section {
+    margin: 0 24px;
+  }
+  .motivation {
+    gap: 12px;
+  }
 }
-@media only screen and (min-width: 900px) {
+
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+  main {
+    margin: 96px 24px;
+    gap: 12px;
+  }
+
+  .about {
+    margin: 0 24px;
+  }
+  .likes-section {
+    margin: 0 24px;
+  }
+  .motivation {
+    gap: 12px;
+  }
 }
