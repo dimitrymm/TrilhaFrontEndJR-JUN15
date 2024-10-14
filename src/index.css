@@ -29,50 +29,50 @@ a {
   display: block;
   pad: 10px;
 }
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  li:hover {
+    color: black;
+    transform: scale(1.1);
+    transition: 0.4 all ease;
+  }
+  li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
 
 .container-header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+  background: var(--red);
   opacity: 1;
-  position: absolute;
+  position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
-
-  ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    li {
-      display: inline-block;
-      position: relative;
-      cursor: pointer;
-      transition: color 0.4s ease, transform 0.4s ease;
-    }
-    li:hover {
-      color: var(--red);
-      transform: scale(1.1);
-      transition: 0.4 all ease;
-    }
-    li::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background-color: var(--red);
-      transform-origin: bottom right;
-      transition: transform 0.5s ease-out;
-    }
-    li:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
-  }
 }
 
 .main-menu {
@@ -238,18 +238,53 @@ main {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: var(--red);
-  margin: 240px 0;
+  margin: 232px 0;
   padding: 12px;
   span {
     font-weight: bold;
   }
 }
+.link-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 32px;
+    height: auto;
+  }
+  span:hover {
+    color: black;
+    transform: scale(1.1);
+    transition: 0.4 all ease;
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  span:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
 .footer-links {
+  img {
+    width: 32px;
+    height: auto;
+  }
   ul {
     display: flex;
-
     align-items: center;
     list-style: none;
 
@@ -260,6 +295,7 @@ footer {
     }
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
